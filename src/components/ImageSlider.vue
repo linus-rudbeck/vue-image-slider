@@ -6,6 +6,13 @@
 </template>
   
 <script>
+// Import the images at the top of the component file
+import img1 from '@/assets/slider-images/img1.jpg';
+import img2 from '@/assets/slider-images/img2.jpg';
+import img3 from '@/assets/slider-images/img3.jpg';
+import img4 from '@/assets/slider-images/img4.jpg';
+import img5 from '@/assets/slider-images/img5.jpg';
+
 // This exports a default Vue component object with its data, computed, and methods options.
 export default {
     data() {
@@ -13,11 +20,11 @@ export default {
         return {
             // This is an array of image paths that will be used in the image slider.
             images: [
-                'src/assets/slider-images/img1.jpg',
-                'src/assets/slider-images/img2.jpg',
-                'src/assets/slider-images/img3.jpg',
-                'src/assets/slider-images/img4.jpg',
-                'src/assets/slider-images/img5.jpg',
+                img1,
+                img2,
+                img3,
+                img4,
+                img5,
             ],
             // This is the index of the current image being displayed in the slider.
             currentIndex: 0,
